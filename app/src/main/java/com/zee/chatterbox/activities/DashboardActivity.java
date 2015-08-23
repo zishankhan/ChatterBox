@@ -1,4 +1,4 @@
-package com.zee.chatterbox;
+package com.zee.chatterbox.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.zee.chatterbox.R;
 
 public class DashboardActivity extends AppCompatActivity implements ValueEventListener {
 
