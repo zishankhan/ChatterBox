@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+        <EditText
+            android:id="@+id/edMsg"
+            android:hint="message here .."
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionSend"/>
+        <Button
+            android:id="@+id/btnPush"
+            android:text="push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edMsg"
+            android:onClick="onPushPressed"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:id="@+id/btnPull"
+            android:text="pull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edMsg"
+            android:layout_alignParentLeft="true"
+            android:onClick="onPullPressed"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="©Aug2015 Zishan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
